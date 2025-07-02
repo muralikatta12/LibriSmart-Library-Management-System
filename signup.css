@@ -37,8 +37,8 @@
         }
 
         #s_left img {
-            width: auto;
-            height: auto;
+            width: 800px;
+            height: 500px;
             border-radius: 10px;
             padding: auto;
         }
