@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+     <div class="container">
+        <!-- Left side with image -->
+        <div class="image-side"></div>
+    <div class="login-container">
+        <h2> Log Into LMS </h2>
+        <p class="sub-title">USER LOGIN</p>
+        <form action="/login" method="post">
+            <!-- username -->
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter Your Username" required>
+            </div>
+
+            <!-- password -->
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter Your Password" required>
+            </div>
+            
+            <!-- forgot password -->
+
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remeber this Device</label>
+                <a href="#">Forget Password</a>
+            </div>
+
+            <button class="Log-in-btn">Log In</button>
+
+            <div class="signup-link">
+                Don't have an account?<a href="#">Create a account</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
