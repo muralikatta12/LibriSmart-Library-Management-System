@@ -1,145 +1,101 @@
 /* Signup.css*/
 /* General Page Styling */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  display: flex;
-  height: 100vh;
-}
 
-.container {
-  display: flex;
-  width: 100%;
-}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+        }
 
-/* Left Panel */
-.left-panel {
-  width: 50%;
-  background-color: #6C4CF1;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 40px;
-}
+        body {
+            display: flex;
+            height: 100vh;
+            background-color: #f3f3f3;
+            color: #333;
+        }
 
-.left-panel h1 {
-  font-size: 30px;
-  margin-bottom: 10px;
-}
+        h1 {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #6C4CF1;
+            font-size: 28px;
+        }
 
-.left-panel p {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
+        #s_left, #s_right {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
 
-.features {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 30px;
-}
+        #s_left {
+            background-color: #6C4CF1;
+            color: white;
+        }
 
-.features button {
-  background: transparent;
-  border: 1px solid white;
-  color: white;
-  padding: 8px 16px;
-  border-radius: 20px;
-  cursor: pointer;
-}
+        #s_left img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
 
-.student-img {
-  width: 200px;
-  border-radius: 50%;
-  margin-top: 20px;
-}
+        #s_right {
+            background-color: white;
+            box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-/* Right Panel */
-.right-panel {
-  width: 50%;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
-}
+        form {
+            width: 100%;
+            max-width: 400px;
+        }
 
-.signup-box {
-  width: 100%;
-  max-width: 400px;
-  display: flex;
-  flex-direction: column;
-}
+        form div {
+            margin-bottom: 20px;
+        }
 
-.signup-box h2 {
-  margin-bottom: 20px;
-  color: #333;
-}
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
 
-.google-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: white;
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-bottom: 15px;
-}
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
 
-.divider {
-  text-align: center;
-  margin: 10px 0;
-  color: #777;
-}
+        input[type="submit"] {
+            background-color: #6C4CF1;
+            color: white;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
-.signup-box input {
-  padding: 12px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
+        input[type="submit"]:hover {
+            background-color: #5535d6;
+        }
 
-.terms {
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
-  font-size: 14px;
-  color: #555;
-}
+        a {
+            color: #6C4CF1;
+            font-size: 14px;
+            text-decoration: none;
+        }
 
-.terms a {
-  color: #6C4CF1;
-  text-decoration: none;
-  margin-left: 5px;
-}
-
-.signup-btn {
-  background-color: #6C4CF1;
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 15px;
-  font-weight: 600;
-}
-
-.login-link {
-  text-align: center;
-  margin-top: 15px;
-  font-size: 14px;
-  color: #555;
-}
-
-.login-link a {
-  color: #6C4CF1;
-  text-decoration: none;
-}
-
+        a:hover {
+            text-decoration: underline;
+        }
