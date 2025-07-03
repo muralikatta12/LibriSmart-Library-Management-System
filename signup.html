@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Signup</title>
+</head>
+<body>
+    
+
+    <div id="s_left">
+        <h1>Welcome to LibriSmart</h1>
+        <img src="https://b2126106.smushcdn.com/2126106/wp-content/uploads/2023/07/library-study-reading.png?lossy=1&strip=1&webp=0" alt="signup image"/>
+    </div>
+    
+    <div id="s_right">
+        <h4>New User SignUp:</h4>
+        <form>
+
+            <div>
+                <label for="s_username">Username:</label>
+                <input type="text" name="s_username" id="s_username" required/> 
+            </div>
+            <div>
+                <label for="s_email">Email: </label>
+                <input type="email" name="s_email" id="s_email" required/> 
+            </div>
+            <div>
+                <label for="s_password">Enter the  password: </label>
+                <input type="password" name="s_password" id="s_password" required/> <br>
+                <label for="s_cnf_password">Confirm the password: </label>
+                <input type="password" name="s_cnf_password" id="s_cnf_password" required/> 
+            </div>
+            <div>
+            <label for="roles">Role:</label>
+            <select name="role" id="roles">
+                <option name="role" value="null" selected disabled>--SELECT--</option>
+                <option name="role" value="admin">Admin</option>
+                <option name="role" value="librarian">Librarian</option>
+                <option name="role" value = "patron">Patron</option>
+            </select>
+            </div>
+
+            <div>
+                <input type="submit" value="Sign Up" />
+            </div>
+            <div>
+                <a href="#">Already have account? Login</a>
+            </div>
+
+
+
+        </form>
+    </div>
+</body>
+</html>
