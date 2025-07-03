@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LMS</title>        
     <link rel="stylesheet" href="login.css">
+
+     <script src="login.js"></script>
 </head>
 
 <body>
@@ -19,15 +21,15 @@
             <!-- username -->
             <div class="input-group">
 
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" placeholder="Enter Your Username" required>
+                <label for="UsernameorEmail">Username/Email</label>
+                <input type="text" id="UsernameorEmail" class = "form-control"  name="usernameorEmail" placeholder="Enter Your Username / Email" required>
             </div>
 
             <!-- password -->
 
             <div class="input-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter Your Password" required>
+                <input type="password" id="password" name="password"  class ="form-control" placeholder="Enter Your Password" required>
             </div>
             
             <!-- forgot password -->
@@ -37,7 +39,7 @@
                 <a href="#">Forget Password</a>
             </div>
 
-            <button type="button" class="Log-in-btn">Log In</button>
+            <button type="button" class="Log-in-btn" id =  "login-btn">Log In</button>
 
             <div class="signup-link">
                 Don't have an account?<a href="#">Create a account</a>
