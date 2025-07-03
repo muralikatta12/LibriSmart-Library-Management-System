@@ -14,7 +14,7 @@ body {
 }
 
 /* Container to hold both image and form side-by-side */
-.container {
+.container-fluid {
   display: flex;
   width: 900px;
   height: 600px;
