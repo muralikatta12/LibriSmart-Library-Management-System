@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LMS Combined Login/Signup</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Your existing CSS files -->
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="signup.css">
+
+  <style>
+    #login-section, #signup-section { display: none; width: 100%; height: auto; }
+  </style>
+</head>
+
+<body style="background-color: #f5f5f5;">
+
+  <!-- <div class="text-center my-3">
+    <button onclick="showLogin()" class="btn btn-primary mx-2">Login</button>
+    <button onclick="showSignup()" class="btn btn-secondary mx-2">Signup</button>
+  </div> -->
+
+  <!-- Login page section -->
+  <div id="login-section">
+    <!-- Paste your entire login.html body content here -->
+    <div class="container-fluid">
+      <div class="image-side"></div>
+      <div class="fw-bold login-container">
+        <h2>Log Into LMS</h2>
+        <p class="sub-title">USER LOGIN</p>
+        <div class="card shadow p-3">
+          <div id="login-form">
+            <form action="/login" method="post">
+              <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter Your Username" required>
+              </div>
+              <div class="mb-4">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter Your Password" required>
+              </div>
+              <div class="mb-2">
+                <div class="remember-forgot">
+                  <label><input type="checkbox">Remember this Device</label>
+                  <a href="#">Forget Password</a>
+                </div>
+              </div>
+              <button class="Log-in-btn rounded-pill" type="submit">Log In</button>
+              <div class="signup-link">
+                Don't have an account? <a href="#" onclick="showSignup()">Create an account</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Signup page section -->
+  <div id="signup-section">
+    <!-- Paste your entire signup.html body content here -->
+    <div id="s_left" class="container-fluid">
+        <h1>Welcome to LibriSmart</h1>
+        <img src="https://b2126106.smushcdn.com/2126106/wp-content/uploads/2023/07/library-study-reading.png?lossy=1&strip=1&webp=0" alt="signup image"/>
+    </div>
+    
+    <div id="s_right" class="container-fluid">
+        <h4>New User SignUp:</h4>
+        <form>
+
+            <div>
+                <label for="s_username">Username:</label>
+                <input type="text" name="s_username" id="s_username" required/> 
+            </div>
+            <div>
+                <label for="s_email">Email: </label>
+                <input type="email" name="s_email" id="s_email" required/> 
+            </div>
+            <div>
+                <label for="s_password">Enter the  password: </label>
+                <input type="password" name="s_password" id="s_password" required/> <br>
+                <label for="s_cnf_password">Confirm the password: </label>
+                <input type="password" name="s_cnf_password" id="s_cnf_password" required/> 
+            </div>
+            <div>
+            <label for="roles">Role:</label>
+            <select name="role" id="roles">
+                <option name="role" value="null" selected disabled>--SELECT--</option>
+                <option name="role" value="admin">Admin</option>
+                <option name="role" value="librarian">Librarian</option>
+                <option name="role" value = "patron">Patron</option>
+            </select>
+            </div>
+
+            <div>
+                <input type="submit" value="Sign Up" />
+            </div>
+
+
+            <div class="signup-link">
+                Already have an account? <a href="#" onclick="showLogin()">Login</a>
+              </div>
+            
+
+
+
+        </form>
+    </div>
+  </div>
+
+  <script>
+    function showLogin() {
+      document.getElementById("login-section").style.display = "flex";
+      document.getElementById("signup-section").style.display = "none";
+    }
+    function showSignup() {
+      document.getElementById("login-section").style.display = "none";
+      document.getElementById("signup-section").style.display = "flex";
+    }
+    window.onload = showLogin; // show login by default
+  </script>
+
+</body>
+</html>
