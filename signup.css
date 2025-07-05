@@ -111,3 +111,6 @@
         a:hover {
             text-decoration: underline;
         }
+        .text-danger {
+  font-size: 0.85rem;
+}
